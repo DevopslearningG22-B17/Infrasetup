@@ -1,0 +1,7 @@
+#ignore big size file to clone in Github
+
+.terraform/
+*.terraform.lock.hcl
+*.tfstate
+*.tfstate.backup
+*.exe
