@@ -7,6 +7,12 @@ rg2 = {
 name = "devinfra_rg2"
 location = "East US2"
 }
+
+rg3 = {
+name = "devinfra_rg2"
+location = "East US2"
+}
+
 #Added new Rg
 }
 
