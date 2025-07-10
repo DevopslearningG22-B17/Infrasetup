@@ -8,11 +8,18 @@ name = "devinfra_rg2"
 location = "East US2"
 }
 
+<<<<<<< HEAD
 rg3 = {
 name = "devinfra_rg2"
 location = "East US2"
 }
 
+=======
+rg4 = {
+name = "devinfra_rg4"
+location = "East US2"
+}
+>>>>>>> featureprodbranch105
 #Added new Rg
 }
 
