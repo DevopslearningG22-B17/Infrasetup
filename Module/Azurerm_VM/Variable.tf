@@ -9,7 +9,7 @@
 
 
 variable "vm_configs" {
-      type = map(any)
+  type = map(any)
 }
 # variable "public_ip_name"{
 #       type = map(any)
