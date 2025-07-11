@@ -15,7 +15,7 @@ module "resource_group2" {
 }
 
 module "virtual_network" {
-    source = "../../Module/Azurerm_VNET"
+    source = "../../Module/Azurerm_Vnet"
     depends_on = [module.resource_group]
     virtual_network = var.dev_virtual_network
 }
