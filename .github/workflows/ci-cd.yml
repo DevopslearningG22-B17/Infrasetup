@@ -7,17 +7,12 @@ on:
 
 jobs:
   terraform:
+    name: 'Terraform Plan & Apply'
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-
-      - name: Print GitHub runner path
-        run: pwd
-
-      - name: List files in current path
-        run: ls -la
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
@@ -26,9 +21,16 @@ jobs:
 
       - name: Terraform Init
         run: terraform init
+        working-directory: ./Environment/Dev
+
+      - name: Terraform Format Check
+        run: terraform fmt -check
+        working-directory: ./Environment/Dev
 
       - name: Terraform Validate
         run: terraform validate
+        working-directory: ./Environment/Dev
 
       - name: Terraform Plan
         run: terraform plan
+        working-directory: ./Environment/Dev
